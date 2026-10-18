@@ -1,0 +1,74 @@
+[
+  {
+    "asset": "assets/images/scoreboard.webp",
+    "source": "UI_REDESIGN/screenshots/phone_016_white_red_full.png",
+    "sourceVersion": "3.4.7",
+    "captured": "2026-10-16",
+    "origin": "Android Emulator API 35, actual running APK",
+    "sourceSha256": "f246abc2b26b1c7d99cbe1f571e896e633968abc51eee8d728a274b718863b6f",
+    "width": 1080,
+    "height": 2400,
+    "transform": "Lossless WebP encoding; no UI editing or generation",
+    "bytes": 172398
+  },
+  {
+    "asset": "assets/images/teams.webp",
+    "source": "UI_REDESIGN/screenshots/phone_029_selected_teams.png",
+    "sourceVersion": "3.4.7",
+    "captured": "2026-10-16",
+    "origin": "Android Emulator API 35, actual running APK",
+    "sourceSha256": "62ebdf3e3a157c61ab4b752e94202c5fc438f86951efeae35e7a584236b444d7",
+    "width": 1080,
+    "height": 2400,
+    "transform": "Lossless WebP encoding; no UI editing or generation",
+    "bytes": 421976
+  },
+  {
+    "asset": "assets/images/players.webp",
+    "source": "UI_REDESIGN/screenshots/phone_008_player_library.png",
+    "sourceVersion": "3.4.7",
+    "captured": "2026-10-16",
+    "origin": "Android Emulator API 35, actual running APK",
+    "sourceSha256": "d8dbedc42600e00dbada3b7780bc36ddfce9eb67f68f8ab4d3047ece7116cdd4",
+    "width": 1080,
+    "height": 2400,
+    "transform": "Lossless WebP encoding; no UI editing or generation",
+    "bytes": 111506
+  },
+  {
+    "asset": "assets/images/standings.webp",
+    "source": "UI_REDESIGN/screenshots/fold_016_standings.png",
+    "sourceVersion": "3.4.7",
+    "captured": "2026-10-16",
+    "origin": "Android Emulator API 35, actual running APK",
+    "sourceSha256": "e17fe3b214924b007cf0cc0f80b638e8145e685ce47397db63cae200c7ee35fe",
+    "width": 2208,
+    "height": 1768,
+    "transform": "Lossless WebP encoding; no UI editing or generation",
+    "bytes": 405070
+  },
+  {
+    "asset": "assets/images/recording.webp",
+    "source": "UI_REDESIGN/screenshots/phone_088_native_selected_teams.png",
+    "sourceVersion": "3.4.7",
+    "captured": "2026-10-16",
+    "origin": "Android Emulator API 35, actual running APK",
+    "sourceSha256": "15b8be6f44db735b5ac4a458989e45d1564a7e3f9f1984170fa6d24aff88dd98",
+    "width": 1080,
+    "height": 2400,
+    "transform": "Lossless WebP encoding; no UI editing or generation",
+    "bytes": 91380
+  },
+  {
+    "asset": "assets/images/route.webp",
+    "source": "UI_REDESIGN/screenshots/fold_018_route.png",
+    "sourceVersion": "3.4.7",
+    "captured": "2026-10-16",
+    "origin": "Android Emulator API 35, actual running APK",
+    "sourceSha256": "7e93f55a55a68f8022ceb361ad69ee6315e2627153cb420de303d9cde396d87b",
+    "width": 2208,
+    "height": 1768,
+    "transform": "Lossless WebP encoding; no UI editing or generation",
+    "bytes": 261432
+  }
+]
