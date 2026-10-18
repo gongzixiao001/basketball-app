@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://gongzixiao001.github.io/basketball-app/sitemap.xml
