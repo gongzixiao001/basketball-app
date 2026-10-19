@@ -73,3 +73,7 @@ python scripts/check_site.py
 ## Android项目
 
 这是独立网站仓库。仅复制展示资源，不包含或修改Android代码、比赛库、私人球员档案、签名密钥或Gradle配置。
+
+## 2V2 玩法插画
+
+首页 #league 中展示五张金蓝线稿说明，位于 assets/images/league/rules-1.webp 至 rules-5.webp。1920×1080，支持点击放大，按组队、积分、挑战、奖牌、分享排列。插画为 AI 生成玩法示意，不是 APP 截图，图片内文字为简体中文；图片下说明和完整赛制均支持四种网站语言。更新规则时请同时核对插画与 data/i18n.json 的 leagueVisual / leagueRule 文案，规则来源为 APP v3.4.13 的 league-engine.js。
