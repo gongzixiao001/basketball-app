@@ -1,7 +1,7 @@
 (() => {
   'use strict';
   const codes=['zh-CN','zh-TW','en','ja'],names=['scoreboard','teams','players','standings','recording','route'];
-  let language='zh-CN',dictionary={},release=null,selectedScreen=0;
+  let language='zh-CN',dictionary={},release=null,selectedScreen=0,selectedRule=null;
   const t=key=>dictionary[language]?.[key]??dictionary['zh-CN']?.[key]??key;
   const $=selector=>document.querySelector(selector);
   try{const requested=new URLSearchParams(location.search).get('lang'),saved=localStorage.getItem('courtside-site-language');language=codes.includes(requested)?requested:codes.includes(saved)?saved:'zh-CN';}catch{}
@@ -29,7 +29,7 @@
     const image=$('#galleryImage');image.src='./assets/images/'+names[selectedScreen]+'.webp';image.alt=t('g'+selectedScreen+'Title');image.removeAttribute('width');image.removeAttribute('height');
     $('#galleryCaption').textContent=t('g'+selectedScreen+'Title');
     document.querySelectorAll('[data-screen]').forEach(button=>button.setAttribute('aria-pressed',String(+button.dataset.screen===selectedScreen)));
-    if($('#lightbox').open){$('#lightboxTitle').textContent=t('g'+selectedScreen+'Title');$('#lightboxImage').alt=t('g'+selectedScreen+'Title');}
+    if($('#lightbox').open&&selectedRule===null){$('#lightboxTitle').textContent=t('g'+selectedScreen+'Title');$('#lightboxImage').alt=t('g'+selectedScreen+'Title');}
   }
   function setLanguage(code){
     if(!codes.includes(code))return;
@@ -43,11 +43,18 @@
     document.querySelector('meta[property="og:description"]').content=t('metaDescription');
     try{localStorage.setItem('courtside-site-language',code);}catch{}
     renderGallery();renderRelease();
+    if(selectedRule!==null){$('#lightboxTitle').textContent=t('leagueVisual'+selectedRule+'Title');$('#lightboxImage').alt=t('leagueVisual'+selectedRule+'Title');}
   }
   function openScreen(index){
-    selectedScreen=index;renderGallery();const image=$('#lightboxImage');image.src='./assets/images/'+names[index]+'.webp';image.alt=t('g'+index+'Title');
+    selectedRule=null;$('#lightbox').classList.remove('rule-lightbox');selectedScreen=index;renderGallery();const image=$('#lightboxImage');image.src='./assets/images/'+names[index]+'.webp';image.alt=t('g'+index+'Title');
     $('#lightboxTitle').textContent=t('g'+index+'Title');$('#lightbox').showModal();
   }
+  document.querySelectorAll('[data-rule-poster]').forEach(link=>link.addEventListener('click',event=>{
+    event.preventDefault();selectedRule=Number(link.dataset.rulePoster);const image=$('#lightboxImage');
+    image.src=link.href;image.alt=t('leagueVisual'+selectedRule+'Title');$('#lightboxTitle').textContent=image.alt;
+    $('#lightbox').classList.add('rule-lightbox');$('#lightbox').showModal();
+  }));
+  $('#lightbox').addEventListener('close',()=>{selectedRule=null;$('#lightbox').classList.remove('rule-lightbox');});
   $('#language').addEventListener('change',e=>setLanguage(e.target.value));
   document.querySelectorAll('[data-screen]').forEach(button=>button.addEventListener('click',()=>{selectedScreen=+button.dataset.screen;renderGallery();}));
   document.querySelectorAll('[data-open-screen]').forEach(button=>button.addEventListener('click',()=>openScreen(+button.dataset.openScreen)));
