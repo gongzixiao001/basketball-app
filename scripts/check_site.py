@@ -28,7 +28,7 @@ def main():
         assert link=="#" or link[1:] in site.ids, f"Broken anchor: {link}"
     css=(ROOT/"styles.css").read_text(encoding="utf-8")
     site.assets += re.findall(r"url\(['\"]?([^)'\"]+)",css)
-    for item in site.assets:assert (ROOT/item).is_file(),f"Missing asset: {item}"
+    for item in site.assets:assert (ROOT/item.split('?')[0]).is_file(),f"Missing asset: {item}"
     translations=json.loads((ROOT/"data/i18n.json").read_text(encoding="utf-8"))
     assert set(translations)=={"zh-CN","zh-TW","en","ja"}
     for locale,strings in translations.items():
