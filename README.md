@@ -1,74 +1,39 @@
-# 闹钟刺客 · 官方下载网站
+# 闹钟刺客记分牌 · Android
 
-静态 HTML / CSS / JavaScript，无构建框架、无 npm 依赖、无第三方统计、无外部字体请求。
+篮球记分、比赛计时、赛事管理与比分同步录像。
 
-- 网站：https://gongzixiao001.github.io/basketball-app/
-- 仓库：https://github.com/gongzixiao001/basketball-app
-- APK：https://github.com/gongzixiao001/basketball-app/releases
-- 联系：alick.ceng@gmail.com
+## 下载 Android 安装包
 
-## 文件
+**[⬇ 点击下载 APK · v3.4.11](https://github.com/gongzixiao001/basketball-app/releases/download/v3.4.11/CourtSideScoreboard-v3.4.11-debug.apk)**
 
-| 路径 | 用途 |
-|---|---|
-| index.html / styles.css / app.js | 页面、白红玻璃样式、交互 |
-| data/i18n.json | 简体、繁体、英语、日语；同一组键 |
-| data/release.json | 已核验的版本、APK体积、SHA-256、发布日期与真实下载地址 |
-| data/site.json | 演示视频地址、海报与联系信息 |
-| assets/images | APP现有图标及真实Android截图的WebP副本 |
-| assets/fonts | APP现有字体及许可证 |
-| docs/DESIGN_SYSTEM.md | 设计来源、视觉规范和待确认项 |
-| docs/screenshot-sources.json | 截图采集版本、日期、尺寸和原图哈希 |
-| scripts/check_site.py | 相对路径、四语言、图片和发布状态检查 |
-| scripts/sync_release.py | 从真实GitHub Releases更新下载信息 |
+Android 8.0 及以上 · 免费 · 9.68 MiB · 发布日期：2026-10-18
 
-## 本地预览
+[官方网站](https://gongzixiao001.github.io/basketball-app/) · [版本说明与全部安装包](https://github.com/gongzixiao001/basketball-app/releases)
 
-在此目录运行Python 3：
+如果没有自动下载，请进入上方版本页面，在 **Assets** 中点击 **CourtSideScoreboard-v3.4.11-debug.apk**。`Source code (zip)` 和 `Source code (tar.gz)` 是网站源码，不是 Android 安装包。
 
-```powershell
-python -m http.server 8765 --bind 127.0.0.1
-```
+## 怎么安装
 
-打开 http://127.0.0.1:8765/。语言选择保存在本站浏览器中，不读取或修改APP偏好。
+1. 在安卓手机上点击上方 APK 下载链接。
+2. 下载完成后打开安装包，根据系统提示允许当前浏览器或文件管理器安装应用。
+3. 首次打开选择简体中文、繁體中文、English 或日本語，确认后进入 APP。
 
-## GitHub Pages发布
+**更新旧版本：直接覆盖安装，不要先卸载。建议先在 APP 中导出赛事备份。**
 
-采用 **main分支 / 根目录**，不是SPA，不需要重写路由：
+## 怎么用
 
-1. 提交并推送本目录的静态文件到main。
-2. 仓库Settings → Pages → Source：Deploy from a branch。
-3. Branch：main；Folder：/(root)；Save。
-4. 等待Pages任务完成，再核验网站。
+- **快速记分**：选择半场或全场，设置双方队伍；使用加减分按钮记录比分，点球员头像记录犯规。
+- **比赛计时**：按需要设置比赛时间；半场和 2V2 使用 12 秒进攻计时，全场使用 24 秒。
+- **2V2 赛事**：新建或载入赛事，添加球队和球员，选择两队并确认进入比赛；在赛事中查看积分、对阵和记录。
+- **比赛录像**：进入摄像，确认拍摄方向和麦克风，再开始录制。在录像界面操作比分，暂停或停止录制；保存的视频带比分信息。
+- **球员管理**：在球员档案中添加、编辑或删除人员，后续组队可直接选用。
 
-内部资源使用相对路径，兼容 /basketball-app/ 项目站点；.nojekyll跳过不需要的Jekyll处理。
-参考：[GitHub Pages发布设置](https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site)。
+## 使用教程视频
 
-## 更新APK
+**准备中。** [网站使用教程入口](https://gongzixiao001.github.io/basketball-app/#demo)已预留，视频制作完成后会在这里更新。
 
-1. 在GitHub Releases创建实际版本标签，上传APK并Publish release。
-2. 运行：
+## 联系作者
 
-```powershell
-python scripts/sync_release.py
-python scripts/check_site.py
-```
+作者：土鱼 · 邮箱：[alick.ceng@gmail.com](mailto:alick.ceng@gmail.com)
 
-3. 在data/i18n.json的四种语言中更新版本说明。
-4. 提交并推送data/release.json和文案文件，Pages自动重新发布。
-
-脚本只读取非草稿、非预发布、已上传完成的.apk附件。没有正式APK时保留待发布状态，绝不拼接猜测地址。
-发布日期来自published_at；体积来自附件size；SHA-256来自附件digest或实际文件。
-页面在发布状态、地址、日期及体积均有效时才开放下载。浏览时不请求GitHub API，避免限流和额外加载。
-
-## 替换演示视频
-
-1. 将真实视频放到assets/video/demo.mp4，或使用公开HTTPS视频地址。
-2. 在data/site.json设置video.src，可选设置video.poster。
-3. 页面自动以原生播放器替换准备中占位。不自动播放，不伪造素材。
-
-当前未提供正式演示片。截图来自v3.4.7模拟器中的实际APP；最新APK版本与截图版本分开标注。
-
-## Android项目
-
-这是独立网站仓库。仅复制展示资源，不包含或修改Android代码、比赛库、私人球员档案、签名密钥或Gradle配置。
+网站更新与发布方法见[维护说明](docs/MAINTENANCE.md)。
