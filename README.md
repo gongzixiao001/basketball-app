@@ -4,13 +4,13 @@
 
 ## 下载 Android 安装包
 
-**[⬇ 点击下载 APK · v3.4.11](https://github.com/gongzixiao001/basketball-app/releases/download/v3.4.11/CourtSideScoreboard-v3.4.11-debug.apk)**
+**[⬇ 点击下载 APK · v3.4.13](https://github.com/gongzixiao001/basketball-app/releases/download/v3.4.13/CourtSideScoreboard-v3.4.13-debug.apk)**
 
-Android 8.0 及以上 · 免费 · 9.68 MiB · 发布日期：2026-10-18
+Android 8.0 及以上 · 免费 · 9.84 MiB · 发布日期：2026-10-19
 
 [官方网站](https://gongzixiao001.github.io/basketball-app/) · [版本说明与全部安装包](https://github.com/gongzixiao001/basketball-app/releases)
 
-如果没有自动下载，请进入上方版本页面，在 **Assets** 中点击 **CourtSideScoreboard-v3.4.11-debug.apk**。`Source code (zip)` 和 `Source code (tar.gz)` 是网站源码，不是 Android 安装包。
+如果没有自动下载，请进入上方版本页面，在 **Assets** 中点击 **CourtSideScoreboard-v3.4.13-debug.apk**。`Source code (zip)` 和 `Source code (tar.gz)` 是网站源码，不是 Android 安装包。
 
 ## 怎么安装
 
