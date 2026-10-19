@@ -12,8 +12,9 @@
   }
   function renderRelease(){
     const available=validRelease(release);
-    document.querySelectorAll('[data-apk-download]').forEach(button=>{button.disabled=!available;button.querySelector('[data-download-label]').textContent=t(available?'downloadReady':'downloadPending');});
+    document.querySelectorAll('[data-apk-download]').forEach(button=>{button.setAttribute('aria-disabled',String(!available));if(available)button.href=release.apkUrl;else button.removeAttribute('href');button.querySelector('[data-download-label]').textContent=t(available?'downloadReady':'downloadPending');});
     document.querySelectorAll('[data-release-status]').forEach(el=>el.textContent=t(available?'publishedNote':el.classList.contains('download-micro')?'pendingShort':'pendingLong'));
+    document.querySelectorAll('[data-apk-link]').forEach(link=>{if(available){link.href=release.apkUrl;link.removeAttribute('aria-disabled');}else{link.removeAttribute('href');link.setAttribute('aria-disabled','true');}});
     $('#releaseState').textContent=t(available?'publishedState':'pendingState');
     $('#releaseDate').textContent=available?new Intl.DateTimeFormat(language,{year:'numeric',month:'short',day:'numeric',timeZone:'UTC'}).format(new Date(release.publishedAt)):t('notPublished');
     if(release){
@@ -53,7 +54,7 @@
   $('#openGallery').addEventListener('click',()=>openScreen(selectedScreen));
   $('#closeLightbox').addEventListener('click',()=>$('#lightbox').close());
   $('#lightbox').addEventListener('click',e=>{if(e.target===$('#lightbox')){const r=$('#lightbox').getBoundingClientRect();if(e.clientX<r.left||e.clientX>r.right||e.clientY<r.top||e.clientY>r.bottom)$('#lightbox').close();}});
-  document.querySelectorAll('[data-apk-download]').forEach(button=>button.addEventListener('click',()=>{if(validRelease(release))location.assign(release.apkUrl);}));
+  document.querySelectorAll('[data-apk-download]').forEach(button=>button.addEventListener('click',e=>{if(button.getAttribute('aria-disabled')==='true')e.preventDefault();}));
   $('#copyChecksum').addEventListener('click',async()=>{try{await navigator.clipboard.writeText(release.sha256);$('#copyStatus').textContent=t('copied');$('#copyChecksum').textContent=t('copied');}catch{$('#copyStatus').textContent=t('copyFailed');$('#copyChecksum').textContent=t('copyFailed');}});
   async function mountVideo(){
     try{const config=await read('./data/site.json');if(!config.video?.src)return;const url=new URL(config.video.src,location.href);if(!['https:','http:'].includes(url.protocol))return;
