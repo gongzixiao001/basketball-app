@@ -63,8 +63,8 @@
     "screenshotNote": "截图来自 v3.4.7 的 Android 模拟器运行采集，使用演示球员资料；非生成图。摄像预览为模拟器测试画面，后续版本可能有细节更新。",
     "demoLabel": "使用教程",
     "demoTitle": "从第一次打开，到记录比赛。",
-    "videoPending": "使用教程视频 · 准备中",
-    "videoDescription": "教程正在制作，完成后可在这里观看。",
+    "videoPending": "使用演示视频",
+    "videoDescription": "观看基本操作演示。有疑问欢迎在视频下留言。",
     "downloadTitle": "下一场，从这里开始。",
     "downloadIntro": "安卓版免费下载。简体中文、繁體中文、English、日本語，在设置中随时切换。",
     "downloadPending": "Android · 即将开放下载",
@@ -100,7 +100,7 @@
     "appIconAlt": "闹钟刺客 APP 图标",
     "navTutorial": "使用教程",
     "navApk": "下载 Android APK",
-    "tutorialSoon": "视频准备中",
+    "tutorialSoon": "观看演示",
     "navLeague": "2V2 联赛",
     "leagueLabel": "篮球群赛事 / 2V2 联赛",
     "leagueTitle": "为篮球群，打出自己的联赛。",
@@ -140,7 +140,10 @@
     "leagueRule4Title": "冠军与季军赛",
     "leagueRule4Body": "挑战阶段结束后，由组织者锁定最终排名，再安排第 1、2 名的冠军赛及第 3、4 名的季军赛。队伍不足 4 队，不安排季军赛。",
     "leagueRule5Title": "伤退、记录与分享",
-    "leagueRule5Body": "球队伤退后停止后续对战，历史赛果与积分保留。赛事保存在当前设备；建议组织者定期导出备份。JPG 可手动分享到群聊，不代表账号或多设备自动同步。"
+    "leagueRule5Body": "球队伤退后停止后续对战，历史赛果与积分保留。赛事保存在当前设备；建议组织者定期导出备份。JPG 可手动分享到群聊，不代表账号或多设备自动同步。",
+    "watchYouTube": "在 YouTube 观看",
+    "watchBilibili": "在 B 站观看",
+    "videoFallback": "如果播放器无法加载，可选择下方平台打开视频。"
   },
   "en": {
     "brand": "闹钟刺客",
@@ -206,8 +209,8 @@
     "screenshotNote": "Screenshots were captured from v3.4.7 running in an Android emulator with demo players. No generated app screens. Camera previews show emulator test imagery; later versions may differ in detail.",
     "demoLabel": "How to use",
     "demoTitle": "From first launch to game day.",
-    "videoPending": "Tutorial video · Coming soon",
-    "videoDescription": "The tutorial is in production. Watch it here when it is ready.",
+    "videoPending": "Getting started video",
+    "videoDescription": "Watch the basic walkthrough. Leave a comment on the video if you have questions.",
     "downloadTitle": "Your next game starts here.",
     "downloadIntro": "A free Android APK. Switch between Simplified Chinese, Traditional Chinese, English and Japanese in settings.",
     "downloadPending": "Android · Download coming soon",
@@ -243,7 +246,7 @@
     "appIconAlt": "闹钟刺客 app icon",
     "navTutorial": "How to use",
     "navApk": "Download Android APK",
-    "tutorialSoon": "Video coming soon",
+    "tutorialSoon": "Watch demo",
     "navLeague": "2V2 League",
     "leagueLabel": "For basketball groups / 2V2 League",
     "leagueTitle": "Your basketball group. Your own league.",
@@ -283,7 +286,10 @@
     "leagueRule4Title": "Gold and bronze games",
     "leagueRule4Body": "After the challenge stage, the organizer locks the final ranking. Ranks 1 and 2 play for the title; ranks 3 and 4 play for bronze. No bronze game is scheduled with fewer than four teams.",
     "leagueRule5Title": "Injuries, records and sharing",
-    "leagueRule5Body": "An injured team stops playing future matchups; past results and points remain. Events are stored on the current device; organizers should export backups regularly. Share JPGs manually in your group chat; this does not provide account or multi-device synchronization."
+    "leagueRule5Body": "An injured team stops playing future matchups; past results and points remain. Events are stored on the current device; organizers should export backups regularly. Share JPGs manually in your group chat; this does not provide account or multi-device synchronization.",
+    "watchYouTube": "Watch on YouTube",
+    "watchBilibili": "Watch on Bilibili",
+    "videoFallback": "If the player does not load, open the video on either platform below."
   },
   "ja": {
     "brand": "闹钟刺客",
@@ -349,8 +355,8 @@
     "screenshotNote": "画像はAndroidエミュレーター上のv3.4.7から、デモ選手データを使用して取得したものです。生成画像ではありません。カメラはテスト映像で、最新バージョンでは細部が異なる場合があります。",
     "demoLabel": "使い方",
     "demoTitle": "初回起動から、試合の記録まで。",
-    "videoPending": "使い方動画 · 準備中",
-    "videoDescription": "チュートリアルを制作中です。完成後はこちらでご覧いただけます。",
+    "videoPending": "操作デモ動画",
+    "videoDescription": "基本操作を動画で紹介します。ご質問は動画のコメント欄へどうぞ。",
     "downloadTitle": "次の試合は、ここから。",
     "downloadIntro": "Android APKを無料で提供。簡体字中国語、繁体字中国語、英語、日本語を設定で切り替えられます。",
     "downloadPending": "Android · ダウンロード準備中",
@@ -386,7 +392,7 @@
     "appIconAlt": "闹钟刺客のアプリアイコン",
     "navTutorial": "使い方",
     "navApk": "Android APK をダウンロード",
-    "tutorialSoon": "動画準備中",
+    "tutorialSoon": "デモを見る",
     "navLeague": "2V2 リーグ",
     "leagueLabel": "バスケグループの大会に / 2V2 リーグ",
     "leagueTitle": "バスケ仲間と、自分たちのリーグを。",
@@ -426,7 +432,10 @@
     "leagueRule4Title": "優勝・3位決定戦",
     "leagueRule4Body": "挑戦ステージ終了後、主催者が最終順位を確定。1・2位で優勝決定戦、3・4位で3位決定戦を行います。4チーム未満の場合、3位決定戦はありません。",
     "leagueRule5Title": "負傷・記録・共有",
-    "leagueRule5Body": "負傷で参加を停止したチームは以後の対戦を行わず、過去の結果とポイントは保持します。大会は現在の端末に保存されるため、定期的なバックアップを推奨します。JPG はグループチャットに手動で共有でき、アカウントや複数端末の自動同期機能ではありません。"
+    "leagueRule5Body": "負傷で参加を停止したチームは以後の対戦を行わず、過去の結果とポイントは保持します。大会は現在の端末に保存されるため、定期的なバックアップを推奨します。JPG はグループチャットに手動で共有でき、アカウントや複数端末の自動同期機能ではありません。",
+    "watchYouTube": "YouTube で見る",
+    "watchBilibili": "Bilibili で見る",
+    "videoFallback": "プレーヤーが読み込めない場合は、下のリンクからご覧ください。"
   },
   "zh-TW": {
     "brand": "鬧鐘刺客",
@@ -492,8 +501,8 @@
     "screenshotNote": "截圖來自 v3.4.7 的 Android 模擬器運行擷取，使用演示球員資料；非生成圖。攝影預覽為模擬器測試畫面，後續版本可能有細節更新。",
     "demoLabel": "使用教學",
     "demoTitle": "從第一次開啟，到記錄比賽。",
-    "videoPending": "使用教學影片 · 準備中",
-    "videoDescription": "教學正在製作，完成後可在這裡觀看。",
+    "videoPending": "操作示範影片",
+    "videoDescription": "觀看基本操作示範。有疑問歡迎在影片下留言。",
     "downloadTitle": "下一場，從這裡開始。",
     "downloadIntro": "安卓版免費下載。簡體中文、繁體中文、English、日本語，在設定中隨時切換。",
     "downloadPending": "Android · 即將開放下載",
@@ -529,7 +538,7 @@
     "appIconAlt": "鬧鐘刺客 APP 圖示",
     "navTutorial": "使用教學",
     "navApk": "下載 Android APK",
-    "tutorialSoon": "影片準備中",
+    "tutorialSoon": "觀看示範",
     "navLeague": "2V2 聯賽",
     "leagueLabel": "籃球群組賽事 / 2V2 聯賽",
     "leagueTitle": "為籃球群組，打出自己的聯賽。",
@@ -569,6 +578,9 @@
     "leagueRule4Title": "冠軍與季軍賽",
     "leagueRule4Body": "挑戰階段結束後，由組織者鎖定最終排名，再安排第 1、2 名的冠軍賽與第 3、4 名的季軍賽。隊伍不足 4 隊，不安排季軍賽。",
     "leagueRule5Title": "傷退、記錄與分享",
-    "leagueRule5Body": "球隊傷退後停止後續對戰，歷史賽果與積分保留。賽事保存在目前裝置；建議組織者定期匯出備份。JPG 可手動分享到群組，不代表帳號或多裝置自動同步。"
+    "leagueRule5Body": "球隊傷退後停止後續對戰，歷史賽果與積分保留。賽事保存在目前裝置；建議組織者定期匯出備份。JPG 可手動分享到群組，不代表帳號或多裝置自動同步。",
+    "watchYouTube": "在 YouTube 觀看",
+    "watchBilibili": "在 B 站觀看",
+    "videoFallback": "若播放器無法載入，可選擇下方平台開啟影片。"
   }
 }
