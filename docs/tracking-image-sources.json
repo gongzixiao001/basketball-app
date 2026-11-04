@@ -1,0 +1,51 @@
+{
+  "updatedAt": "2026-11-04",
+  "testDate": "2026-10-26",
+  "origin": "Frames from an actual native-algorithm offline replay of user-supplied basketball footage; not AI-generated images or live-phone screenshots.",
+  "method": "Same source frame in all three panels. Full-frame detection output, standard crop, maximum crop. 100 ms simulated result-delivery delay, not measured phone latency. No manually completed trajectories.",
+  "limits": "Selected examples are not an accuracy estimate. Small distant balls, occlusion, visual drift and mobile recording load remain unresolved. Production v3.4.16 does not contain AI tracking.",
+  "images": [
+    {
+      "frame": 238,
+      "timeSeconds": 8.5,
+      "source": "follow-frame-238.jpg",
+      "sourceSha256": "e0d64fd2d30b9e9e47bce833bf67e68cdc375bc73a79e442400cbcfcf0fa39eb",
+      "comparisonAsset": "assets/images/tracking-flight-comparison.webp",
+      "panels": [
+        {
+          "asset": "assets/images/tracking-flight-original.webp",
+          "operation": "crop panel 1, excluding pre-existing headings and footer only"
+        },
+        {
+          "asset": "assets/images/tracking-flight-standard.webp",
+          "operation": "crop panel 2, excluding pre-existing headings and footer only"
+        },
+        {
+          "asset": "assets/images/tracking-flight-maximum.webp",
+          "operation": "crop panel 3, excluding pre-existing headings and footer only"
+        }
+      ]
+    },
+    {
+      "frame": 350,
+      "timeSeconds": 12.5,
+      "source": "follow-frame-350.jpg",
+      "sourceSha256": "9efc7f75d1cd735f4938302cf55787102a533e33d872f150fa96652a9d814934",
+      "comparisonAsset": "assets/images/tracking-edge-comparison.webp",
+      "panels": [
+        {
+          "asset": "assets/images/tracking-edge-original.webp",
+          "operation": "crop panel 1, excluding pre-existing headings and footer only"
+        },
+        {
+          "asset": "assets/images/tracking-edge-standard.webp",
+          "operation": "crop panel 2, excluding pre-existing headings and footer only"
+        },
+        {
+          "asset": "assets/images/tracking-edge-maximum.webp",
+          "operation": "crop panel 3, excluding pre-existing headings and footer only"
+        }
+      ]
+    }
+  ]
+}
