@@ -1,13 +1,13 @@
 {
   "repository": "gongzixiao001/basketball-app",
-  "version": "3.4.13",
+  "version": "3.4.16",
   "status": "published",
-  "apkName": "CourtSideScoreboard-v3.4.13-debug.apk",
-  "sizeBytes": 10320298,
-  "sha256": "976367e80bc33d70fcad4a18e6bacc919b7dc16fd0232bddc808dbe347953b02",
-  "publishedAt": "2026-10-19T06:17:36Z",
-  "apkUrl": "https://github.com/gongzixiao001/basketball-app/releases/download/v3.4.13/CourtSideScoreboard-v3.4.13-debug.apk",
-  "releaseUrl": "https://github.com/gongzixiao001/basketball-app/releases/tag/v3.4.13",
-  "verifiedAt": "2026-10-19T06:18:15.628Z",
-  "source": "GitHub Releases REST API; uploaded APK asset"
+  "apkName": "CourtSideScoreboard-v3.4.16-debug.apk",
+  "sizeBytes": 10353505,
+  "sha256": "da7933eb6f7d08afdc8b0100b497c47441bb597b1731ca646b42e643e5f40c83",
+  "publishedAt": "2026-11-04T08:12:58Z",
+  "apkUrl": "https://github.com/gongzixiao001/basketball-app/releases/download/v3.4.16/CourtSideScoreboard-v3.4.16-debug.apk",
+  "releaseUrl": "https://github.com/gongzixiao001/basketball-app/releases/tag/v3.4.16",
+  "verifiedAt": "2026-11-04T08:21:56.043Z",
+  "source": "GitHub Releases REST API; uploaded APK asset digest and byte count verified"
 }
